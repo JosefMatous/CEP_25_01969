@@ -1,0 +1,10 @@
+name = "MarineModels"
+uuid = "db75b81f-829a-4660-aee5-799ea9ad7ee1"
+authors = ["Josef Matous <josef.matous@ntnu.no>"]
+version = "0.4.2"
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+EulerLagrangeX = "91f8729b-c9d3-4730-8fcd-6c59a53884b7"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"

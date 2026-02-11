@@ -1,0 +1,16 @@
+name = "AdaptiveController"
+uuid = "b2ab0ea4-d160-4d8f-af02-9600b28f945b"
+version = "0.1.0"
+authors = ["Josef Matous <josef.matous@ntnu.no>"]
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+EulerLagrangeX = "91f8729b-c9d3-4730-8fcd-6c59a53884b7"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MarineModels = "db75b81f-829a-4660-aee5-799ea9ad7ee1"
+
+[compat]
+DocStringExtensions = "0.9.5"
+ForwardDiff = "1.3.1"
+LinearAlgebra = "1.12.0"

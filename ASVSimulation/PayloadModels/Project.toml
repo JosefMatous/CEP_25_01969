@@ -1,0 +1,11 @@
+name = "PayloadModels"
+uuid = "a198b99b-412a-4dc1-8b7f-bc5ac98e2aa9"
+version = "0.1.0"
+authors = ["Josef Matous <josef.matous@ntnu.no>"]
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+EulerLagrangeX = "91f8729b-c9d3-4730-8fcd-6c59a53884b7"
+
+[compat]
+DocStringExtensions = "0.9.5"
