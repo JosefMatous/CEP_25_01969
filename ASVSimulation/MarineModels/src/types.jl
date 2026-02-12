@@ -33,7 +33,9 @@ A structure encapsulating a marine vehicle model and a controller
 $(FIELDS)
 """
 struct ControlledASV <: EulerLagrangeX.ControlledEulerLagrangeSystem
+    "Physical model of the ASV"
     mdl::ASVModel
+    "Controller for the ASV"
     ctrl::Controller
 end
 

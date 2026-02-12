@@ -5,7 +5,7 @@ export default_asv_controller
 
 function default_line_of_sight()
     U = 3.0
-    Δ = 5.0
+    Δ = 15.0
     return AdaptiveController.LOSParameters(U, Δ)
 end
 
@@ -26,7 +26,6 @@ function default_asv_controller()
     los = default_line_of_sight()
     ctrl = default_adaptive_controller()
 
-    L = 100.0
     k_ψ = 1.0e4
     k_r = 2.0e4
 
@@ -34,7 +33,6 @@ function default_asv_controller()
         los,
         default_path,
         ctrl,
-        L,
         k_ψ,
         k_r
     )

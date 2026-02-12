@@ -36,7 +36,8 @@ for _ in 1:length(packages)
             for dep in local_deps[package]
                 Pkg.develop(path=joinpath(@__DIR__, dep))
             end
-            Pkg.resolve()
+            Pkg.instantiate()
+            Pkg.precompile()
             push!(resolved, package)
         end
     end

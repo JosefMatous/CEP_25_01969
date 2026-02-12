@@ -15,8 +15,6 @@ struct ASVAdaptiveController <: MarineModels.Controller
     path::Function
     "Adaptive linearizing controller parameters"
     ctrl::AdaptiveLinearizingController
-    "Nominal cable length"
-    L::Real
     "Heading control proportional gain"
     k_ψ::Real
     "Heading control derivative gain"
