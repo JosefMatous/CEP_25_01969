@@ -33,8 +33,11 @@ for _ in 1:length(packages)
     for package in packages
         if !is_resolved(package) && is_resolvable(package)
             Pkg.activate(joinpath(@__DIR__, package))
-            for dep in local_deps[package]
-                Pkg.develop(path=joinpath(@__DIR__, dep))
+            if !isempty(local_deps[package])
+                specs = [
+                    Pkg.PackageSpec(path=joinpath(@__DIR__, dep)) for dep in local_deps[package]
+                ]
+                Pkg.develop(specs)
             end
             Pkg.instantiate()
             Pkg.precompile()
